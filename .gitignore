@@ -1,0 +1,17 @@
+# 一些缓存的文件
+*.cache
+*.bak
+*.tmp
+
+# 一些不用文件
+*.log
+*.iso
+
+# 测试目录
+TEST/
+
+# 项目模版
+/te.html
+
+# 文件目录存放目录
+Directory/

@@ -1,0 +1,43 @@
+/* 导航栏 */
+.nav {
+    width: 100%;
+    margin-left: 20px;
+    background-color: #E8ECEB;
+    opacity: 0.85;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav ul {
+    /* 清除ul标签的默认样式 */
+    width: auto;
+    /* 宽度也改为自动 */
+    list-style-type: none;
+    margin-right: 5%;
+}
+.nav li {
+    /* 使li横向浮动，即横向排列  */
+    float: left;
+    /* li之间的距离*/
+    margin-right: 2%;
+}
+.nav li a {
+    /* 设置链接内容显示的格式*/
+    display: block;
+    /* 把链接显示为块元素可使整个链接区域可点击 */
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    /* 去除下划线 */
+    font-weight: 400;
+    /* 字体还原默认粗细 */
+}
+.nav li a:hover {
+    /* 鼠标选中时背景颜色 */
+    background-color: #2E9EFD;
+    text-decoration: underline;
+    /* 增加下划线 */
+    font-weight: 900;
+    /* 字体加粗 */
+}

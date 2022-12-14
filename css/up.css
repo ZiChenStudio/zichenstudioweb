@@ -1,0 +1,9 @@
+/* 回到顶部按钮开始 */
+.up{
+    float: right;
+    position: fixed;
+    height: 100px;  
+    width: 100px;
+    top: 70%;
+    right:5px;
+}

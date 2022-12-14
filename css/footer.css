@@ -1,0 +1,26 @@
+.footer{
+    float: right;
+    background-color: rgba(241,241,241,0.3);
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.footercolor{
+    animation-name: footercolor;
+    animation-duration: 12s;         /* 播放10秒 */
+    animation-delay: -4s;           /* -1秒延迟 */
+    animation-iteration-count: infinite;        /* 无限循环播放 */
+}
+@keyframes footercolor {
+    0%   {color:#000000;}
+    12%  {color:#FF0000;}
+    24%  {color:#00FF00;}
+    36%  {color:#0000FF;}
+    48%  {color:#FFFF00;}
+    60%  {color:#00FFFF;}
+    72%  {color:#FF00FF;}
+    84%  {color:#C0C0C0;}
+    100% {color:#000000;}
+}
