@@ -9,18 +9,34 @@
 }
 .footercolor{
     animation-name: footercolor;
-    animation-duration: 12s;         /* 播放10秒 */
-    animation-delay: -4s;           /* -1秒延迟 */
+    animation-duration: 8s;         /* 播放10秒 */
+    animation-delay: -2s;           /* -1秒延迟 */
     animation-iteration-count: infinite;        /* 无限循环播放 */
 }
 @keyframes footercolor {
-    0%   {color:#000000;}
-    12%  {color:#FF0000;}
-    24%  {color:#00FF00;}
-    36%  {color:#0000FF;}
-    48%  {color:#FFFF00;}
-    60%  {color:#00FFFF;}
-    72%  {color:#FF00FF;}
-    84%  {color:#C0C0C0;}
-    100% {color:#000000;}
+    0%   {color:rgb(254, 241, 0);}
+    4.2%  {color:rgb(251, 199, 1);}
+    8.4%  {color:rgb(244, 150, 0);}
+    12.6%  {color:rgb(235, 97, 0);}
+    16.8%  {color:rgb(229, 1, 18);}
+    21%  {color:rgb(231, 0, 52);}
+    25.2%  {color:rgb(229, 1, 80);}
+    29.4%  {color:rgb(229, 0, 105);}
+    33.6%  {color:rgb(229, 0, 126);}
+    37.8% {color:rgb(190, 1, 129);}
+    42% {color:rgb(147, 7, 132);}
+    46.2% {color:rgb(96, 24, 132);}
+    50.4% {color:rgb(29, 32, 135);}
+    54.6% {color:rgb(1, 71, 157);}
+    58.8% {color:rgb(1, 104, 183);}
+    63% {color:rgb(1, 134, 209);}
+    67.2% {color:rgb(2, 160, 233);}
+    71.4% {color:rgb(1, 159, 194);}
+    75.6% {color:rgb(1, 158, 151);}
+    79.8% {color:rgb(0, 155, 107);}
+    84% {color:rgb(0, 154, 68);}
+    88.2% {color:rgb(37, 171, 58);}
+    92.4% {color:rgb(143, 195, 32);}
+    96.8% {color:rgb(208, 220, 0);}
+    100%   {color:rgb(254, 241, 0);}
 }
