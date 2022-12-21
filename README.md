@@ -25,11 +25,21 @@ Thank you very much!
 ## 网页
 如果您想查看我们的网页，请访问下面的链接
 
-- [主页](https://zichenstudio.netlify.app/)<br>
+- [主页](https://zichenstudio.netlify.app/)
+- [Blog](https://zichenstudio.netlify.app/blog/)
 
 主页链接：
 > https://zichenstudio.netlify.app
 
+Blog主页链接：
+> https://zichenstudio.netlify.app/blog
+## 储存库
+我们将网页文件分为2个储存库<br>
+它们的链接：
+- [Github](https://github.com/ZiChenStudio/zichenstudioweb)
+- [Gitee](https://gitee.com/zichenstudio/zichenstudioweb)
+
+其中Gitee仅与Github进行同步，并不进行commit，如果查看最新改动，请访问上面的Github。
 ## 反馈
 反馈邮箱：<br>
 ```
