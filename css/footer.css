@@ -7,7 +7,7 @@
     bottom: 0;
     width: 100%;
 }
-.footercolor{
+.footer a{
     animation-name: footercolor;
     animation-duration: 8s;         /* 播放10秒 */
     animation-delay: -2s;           /* -1秒延迟 */
