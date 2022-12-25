@@ -70,6 +70,8 @@ ZiChenStudio & ZiChen Official Team
 ## 特别鸣谢
 > 参见[*特别鸣谢*](https://zichenstudio.netlify.app/html/thanks.html)
 
+## 建议&提问
+访问[issue](https://github.com/ZiChenStudio/zichenstudioweb/issues "Github Issues")
 ## 法律声明
 
 - **法律声明**
