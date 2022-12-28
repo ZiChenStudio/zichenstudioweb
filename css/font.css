@@ -1,0 +1,13 @@
+/* 引用HarmonyOS字体 */
+/* 注：HarmonyOS_Sans的LICENSE文件目录为:/font/LICENSE.txt */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    src: url(/font/HarmonyOS_Sans.woff2) format('woff2');
+}
+/* 字体启用 */
+html {
+    font-family: 'HarmonyOS_Sans', sans-serif;
+}
