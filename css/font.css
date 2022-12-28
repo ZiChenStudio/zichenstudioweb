@@ -1,7 +1,7 @@
-/* 引用HarmonyOS字体 */
+﻿/* 引用HarmonyOS字体 */
 /* 注：HarmonyOS_Sans的LICENSE文件目录为:/font/LICENSE.txt */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'HarmonyOS_Sans';
     font-style: normal;
     font-weight: 400;
     font-stretch: normal;
