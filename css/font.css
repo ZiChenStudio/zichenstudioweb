@@ -6,7 +6,9 @@
     font-weight: 400;
     font-stretch: normal;
     src: url(/font/HarmonyOS_Sans.woff2) format('woff2');
+    src: url(/font/HarmonyOS_Sans.woff) format('woff');
 }
+
 /* 字体启用 */
 html {
     font-family: 'HarmonyOS_Sans', sans-serif;
