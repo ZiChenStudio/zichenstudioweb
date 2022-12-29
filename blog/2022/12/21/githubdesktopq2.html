@@ -49,9 +49,9 @@
     </div>
     <h1 id="github提交代码http2-stream-1-was-not-closed-cleanly-before-end-of-the-underlying-stream">github提交代码:HTTP/2 stream 1 was not closed cleanly before end of the underlying stream</h1>
 
-<p>通过排查发现，是 git 默认使用的通信协议出现了问题，可以通过将默认通信协议修改为 http/1.1 来解决该问题。</p>
+<p>通过排查发现,是 git 默认使用的通信协议出现了问题,可以通过将默认通信协议修改为 http/1.1 来解决该问题.</p>
 
-<p>打开git，输入：</p>
+<p>打开git,输入：</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global http.version HTTP/1.1
 </code></pre></div></div>
 

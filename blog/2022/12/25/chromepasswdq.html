@@ -52,74 +52,74 @@
 
 <p>Chrome是基于Chromium开源项目制作的浏览器</p>
 
-<p>同样的Chromium也是个浏览器，它是基于WebKit的开源项目，某种意义上来讲，它是Chrome的不稳定版本，在它上面测试的功能能正常运行，就会被移动到Chrome上。</p>
+<p>同样的Chromium也是个浏览器,它是基于WebKit的开源项目,某种意义上来讲,它是Chrome的不稳定版本,在它上面测试的功能能正常运行,就会被移动到Chrome上.</p>
 
 <p>这篇文章注意谈谈Chromium内核的浏览器把破解浏览器保存密码的密钥放在本地的事</p>
 
 <hr />
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>先说工作流程
-浏览器把密码存放在本地，此时的密码是加密的，破解应该需要几十亿年。
-之后，浏览器会把破解这个加密密码的密钥放在Chrome的文件夹中，也就是本地
-有了这个密钥，破解这个破解应该需要几十亿年的密码，只要1秒钟！
+浏览器把密码存放在本地,此时的密码是加密的,破解应该需要几十亿年.
+之后,浏览器会把破解这个加密密码的密钥放在Chrome的文件夹中,也就是本地
+有了这个密钥,破解这个破解应该需要几十亿年的密码,只要1秒钟!
 </code></pre></div></div>
 
-<p>没错，这就是问题所在。</p>
+<p>没错,这就是问题所在.</p>
 
-<p>其实，我能找到的，Google在2013年已经回应了这个问题</p>
+<p>其实,我能找到的,Google在2013年已经回应了这个问题</p>
 <blockquote>
-  <p>Google：如果黑客入侵了您的电脑，您的密码在劫难逃。</p>
+  <p>Google：如果黑客入侵了您的电脑,您的密码在劫难逃.</p>
 </blockquote>
 
-<p><strong>也就是说Google知道这个Bug，而且并没有修。</strong></p>
+<p><strong>也就是说Google知道这个Bug,而且并没有修.</strong></p>
 
 <p><br /><br /><br /></p>
 
 <p>Google好像并不重视安全问题……?<br />
-<strong>是吗？</strong></p>
+<strong>是吗?</strong></p>
 
-<p>其实我认为不是的。</p>
+<p>其实我认为不是的.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>就算Google修复了这个问题，你的密码就真的安全了？
-不是！
-如果你被黑了，就算你的密码保存在网络，黑客也可以通过网络抓包等方式盗取你的密码。
-修复这个问题仅仅是增加破解密码的难度，并没有从根本上解决问题。
-Google不修Bug的行为我认为是可以理解的。
-如果我是Google，我也不会修这个修完跟没修差不多的Bug。
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>就算Google修复了这个问题,你的密码就真的安全了?
+不是!
+如果你被黑了,就算你的密码保存在网络,黑客也可以通过网络抓包等方式盗取你的密码.
+修复这个问题仅仅是增加破解密码的难度,并没有从根本上解决问题.
+Google不修Bug的行为我认为是可以理解的.
+如果我是Google,我也不会修这个修完跟没修差不多的Bug.
 </code></pre></div></div>
 
-<p>但是Google这样的大公司应该是注意声誉的。</p>
+<p>但是Google这样的大公司应该是注意声誉的.</p>
 
-<p>它们其实应该修复这个Bug，给它的用户装装样子。</p>
+<p>它们其实应该修复这个Bug,给它的用户装装样子.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>但是在这点上我还是认为Firefox做的好，它可以设置主密码，也就相当于二次保护。
-但如果黑客真的黑入了你的电脑，你的密码真的在劫难逃，Firefox也没有用。
-Firefox只能防止你没学过网络技术的朋友之类的。
-而且现在很多网站都要求扫描登陆，很多有了密码还有扫码等二次验证，已经很安全了。
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>但是在这点上我还是认为Firefox做的好,它可以设置主密码,也就相当于二次保护.
+但如果黑客真的黑入了你的电脑,你的密码真的在劫难逃,Firefox也没有用.
+Firefox只能防止你没学过网络技术的朋友之类的.
+而且现在很多网站都要求扫描登陆,很多有了密码还有扫码等二次验证,已经很安全了.
 </code></pre></div></div>
 
 <hr />
 
 <h2 id="解决办法">解决办法</h2>
-<p>其实你不必使用浏览器保存密码，你可以用第三方密码管理器</p>
+<p>其实你不必使用浏览器保存密码,你可以用第三方密码管理器.</p>
 
-<p>我用的是KeePass 2，开源的，有问题可以看源代码，也可以跟原作者提问，有安全Bug可以及时修复。<br />
-我知道的其他的软件都是闭源，不知道有没有后门，要么是有过安全问题的报道。</p>
+<p>我用的是KeePass 2,开源的,有问题可以看源代码,也可以跟原作者提问,有安全Bug可以及时修复.<br />
+我知道的其他的软件都是闭源,不知道有没有后门,要么是有过安全问题的报道.</p>
 
 <blockquote>
-  <p>但因为找到了下面这个更好的方法，已经不用了。</p>
+  <p>但因为找到了下面这个更好的方法,已经不用了.</p>
 </blockquote>
 
 <p><br /><br /></p>
 
 <h3 id="最安全的方法">最安全的方法：</h3>
-<p>我正在用的！</p>
+<p>我正在用的!</p>
 
-<p>就是不用任何密码管理器，直接把密码记录在大脑里。<br />
-不仅锻炼记忆，还安全。<br />
-(忘了别怪我哈。)</p>
+<p>就是不用任何密码管理器,直接把密码记录在大脑里.<br />
+不仅锻炼记忆,还安全.<br />
+(忘了别怪我哈.)</p>
 
-<p>如果密码太多的话还是建议使用第三方密码管理器。</p>
+<p>如果密码太多的话还是建议使用第三方密码管理器.</p>
 
 </article>
 
