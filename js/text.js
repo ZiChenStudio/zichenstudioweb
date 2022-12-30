@@ -13,13 +13,19 @@ $(function () {
         else {
             $('#goto').hide();
         }
-        console.log('writeTexter');
+    writeTextWorker();
     }
     // 输入开始
     function writeTextWorker() {
         $('li').html('NULL');
         $('.li1').html('<p>Popover virus</p><p><a href="https://raw.githubusercontent.com/ZiChenStudio/Popover_virus/main/src/popover_virus/popover_virus.vbs.exe">Download(.EXE)</a></p><p>Windows XP(+)</p>')
+
+        csserWorker();
     }
     writeTexter();
-    writeTextWorker();
+    function csserWorker() {
+        // 更改背景颜色与文字颜色
+        $('#body').css({ "background-color":"#000", "color":"#0f0" });
+        $('a').css({ "color":"#f00", "text-decoration":"none" });
+    }
 });
