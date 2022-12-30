@@ -1,4 +1,3 @@
-console.log("Done:Webp.js");
 /**
 * HTML WebP Plugin v1.0.2
 *   By EtherDream (zjcqoo@163.com)

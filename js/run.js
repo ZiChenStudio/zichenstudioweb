@@ -1,19 +1,25 @@
 $(function () {
-    if ($('#goto').text() != '1IxOnYB6ND3fieK8_I458wBMlMLsiyvKDUKxuZIa0eH97jY5gL-DJxi1ECXqucoy8IlGwB2hrlhj1xP-gfypQhAtDjlKcna2UoEcGv9UtSIUDDnbd2HHUu18wyYQbcRXsdXpIGl6M6Gwop_-DSAUesKdyx5yK8untBi9gI_3wzyYgX1o470Por2gGIhE9LKb7CNEdk0a9iZM8lbeK73KDEA1mSlxptRhH84ICrai70tD_gefyMuFLjOlFhmz4UE0') {
+    if ($('#goto').val() != 'fULLJgZW3muInAHiMtKh6Hx7zOELTikXMbRCfvyUJh6dRqXDwb4kuEvblunqsIECsqk1109D7Sr85CC_W07S6oE88sqmkzuPl4nanOGyAoc931LFWKsp3tmzb-Yb7APpo5T6PeY7kPSCuNDGR981TRHc3IqJQizr5tJhRds6HuQeXGwMq5P9GSZ2J45OSEyXMYMzMJtRL-n5oVrIS-Qr05SStLxmJWGm4eDevQUEIbroW9d_-bgxfI-zGOGyTTrEpR45MBhJuAsG5cPMXC7cWT7H18zUKXQl8z5Ps2iXZSmpd7E0xAcKd4_JL8dNy4ilXlxrg-ib1GKGz52W1OJZ385I_EjHAI_9jSbHtxdG7GDokNGa3u_ij-yBghXow03lgictVxktl0ExipmFzMN9-6Pn4PId17d8EMYSen9w4xGkvTF31ZoxDEsHlmdtQu6aVIwA6YiSI1IFuVZ2nNegj71E0oQR5Q95hXYis4tibWXRJDl13HOLxCPQqPrHz8zQ') {
+        alert('Wrong!')
+        var x = 0,y = 1024,z = 2;
+        for (;x === 0;) {
+            console.log('Wrong!')
+            y = y * z;
+        }
         return;
     }
     else {
-        alert('PASS')
+        alert('PASS');
+        var num = Math.floor(Math.random() * 2147483648);
+        alert('Welcome No.' + num);
     }
     function html() {
         $("#ul").hide();
         $('#h1').click(function () {
             // 开始运行
             $("#ul").hide();
-            alert('Welcome to ZCSDark');
             // 删除无用字体
             $('#link').remove();
-            $('#input').remove();
             $('#button').remove();
             // 更改文本
             $("#h1").html('ZCSDark');
@@ -29,12 +35,14 @@ $(function () {
         });
         function darkTexter() {
             $('li').remove();
-            var a = 10, n = 1;
+            var a = 32, n = 1;
             for (; a > 0; delete a) {
                 $('#liAdd').append('<li class="li' + n + '"></li>');
                 a -= 1, n += 1;
-                $('li').css({ "margin": "4.3%" });
+                $('li').css({ "margin": "2%" });
             }
+            $('#liAdd').append('<div id="pwd"></div>');
+            $('#pwd').html($('#goto').val()).css({"color":"#000"});
             jQuery.getScript("./js/text.js");
         }
     }
