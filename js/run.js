@@ -14,6 +14,8 @@ $(function () {
             alert('Welcome to ZCSDark');
             // 删除无用字体
             $('#link').remove();
+            $('#input').remove();
+            $('#button').remove();
             // 更改文本
             $("#h1").html('ZCSDark');
             $('#title').html('ZCSDark');
@@ -34,7 +36,7 @@ $(function () {
                 a -= 1, n += 1;
                 $('li').css({ "margin": "4.3%" });
             }
-            jQuery.getScript("./text.js");
+            jQuery.getScript("./js/text.js");
         }
     }
     html();
