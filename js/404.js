@@ -1,4 +1,5 @@
 function x() {
+    console.log('x start')
     function Click() {
         var homeUrl = 'https://zichenstudio.netlify.app';
         window.location = homeUrl;
@@ -18,12 +19,21 @@ function x() {
             Click();
         };
     };
-    if ($(window).height() < $(window).width()) {
-    if ($(window).width() - $(window).height() <= $(window).width() * 0.2) {
-        Click();
+    function IsPhone() {
+        var info = navigator.userAgent;
+        var isPhone = /mobile/i.test(info);
+        return isPhone;
     }
-}
-    setTimeout('x()',3000);
+    if (IsPhone() === false) {
+        if ($(window).width() - $(window).height() <= $(window).width() * 0.2) {
+            console.log('Phone is false!');
+            Click();
+        }
+    }
+    else {
+        console.log('Phone is true!');
+    }
+    setTimeout('x()', 3000);
 }
 console.log($(window).width() - $(window).height());
 x();
