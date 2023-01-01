@@ -21,9 +21,20 @@
         <div id="liAdd"></div>
     </ul>
     <hr>
-    <script src="/js/run.js"></script>
-    <script language="javascript">
-        eval(Decryptionbytes);
+    <script>
+        $(function () {
+            function deleteButton() {
+                if ($('#goto').val() === '6E--04-43-26300-2021--2--9463A-2-38') {
+                    $('#goto').attr("disabled", "disabled");
+                    $('#button').remove();
+                }
+                else if ($('#goto').val() != 'feedback') {
+                    $('#goto').val('feedback');
+                }
+            }
+            deleteButton();
+            $.getScript("/js/run.js");
+        });
     </script>
 </body>
 
