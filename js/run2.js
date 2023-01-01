@@ -10,7 +10,7 @@ $(function () {
         }
         $('#liAdd').append('<div class="pwd"></div>');
         $('.pwd').html(key).css({ "color": "#000" });
-        jQuery.getScript("/js/text.js");
+        $.getScript("/js/text.js");
     }
     darkTexter();
 });
