@@ -3,9 +3,8 @@
 	<head id="head">
 		<meta charset="UTF-8">
 		<script src="/js/jquery-3.6.0.min.js"></script>
-		<script src="/js/JielinCodeDecryption_min.js"></script>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="shortcut icon" href="https://zichenstudio.netlify.app/img/icon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="/img/icon.ico" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title id="title">404 NOT FOUND</title>
 	</head>
@@ -13,24 +12,15 @@
 		<h1 id="h1">404</h1>
 		<h2 id="h2">NOT FOUND.</h2>
 		<p id="link"><a href="/inedx.html">我们的官网</a><br><a href="/blog/index.html">我们的Blog</a></p>
-		<input type="text" id="goto" value="feedback"><button id="button">提交(Submit)</button>
+		<input type="text" value="feedback"><button id="button">提交(Submit)</button>
 		<p id="feedback"></p>
-		<ul id="ul">
-			<div id="liAdd"></div>
-		</ul>
 		<hr>
 		<script>
 			$(function() {
-				function deleteButton() {
-					if ($('#goto').val() === '6E--04-43-26300-2021--2--9463A-2-38') {
-						$('#goto').attr("disabled", "disabled");
-						$('#button').remove();
-					} else if ($('#goto').val() != 'feedback') {
-						$('#goto').val('feedback');
-					}
-				}
-				deleteButton();
-				$.getScript("/js/run.js");
+				$('#button').click(function() {
+					var num = Math.floor(Math.random() * 142857);
+					$('#feedback').html('已提交,提交编号: ' + num);
+				});
 			});
 		</script>
 	</body>
